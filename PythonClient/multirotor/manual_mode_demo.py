@@ -14,6 +14,8 @@ client.confirmConnection()
 client.enableApiControl(True)
 client.armDisarm(True)
 
+client.moveByManualAsync()
+
 state = client.getMultirotorState()
 s = pprint.pformat(state)
 print("state: %s" % s)
